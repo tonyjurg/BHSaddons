@@ -2,7 +2,7 @@
 
 # BHSaddons
 
-This repository contains a set of additional features developed for the [BHSA Text-Fabric dataset]().
+This repository contains a set of additional features developed for the [BHSA Text-Fabric dataset](https://github.com/ETCBC/bhsa).
 
 The following features are provided:
 
