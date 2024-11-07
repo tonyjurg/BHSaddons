@@ -21,7 +21,7 @@ feature | Description
 
 ## Adding the features
 
-By default, the additional features of the Nestle 1904 Text-Fabric dataset are not loaded. To include them, use the `mod` option during invocation, as shown below:
+By default, the additional features of the BHSA Text-Fabric dataset are not loaded. To include them, use the `mod` option during invocation, as shown below:
 
 ```python
 # Load the BHSA app and data with additional parasha features
