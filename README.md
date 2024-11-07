@@ -8,12 +8,12 @@ The following features are provided:
 
 feature | Description
 ---|---
-aliyotnum|Sequence number of the aliyot within the parasha
-maftir| Set to '1' if this verse is part of a maftir
-parashahebr| The name of the parasha in Hebrew
-parashanum| The sequence number of the parasha
-parashatrans| Transliteration of the Hebrew parasha name
-parashaverse| The sequence number of the verse within the parasha
+[aliyotnum](docs/features/aliyotnum.md)|Sequence number of the aliyot within the parasha
+[maftir](docs/features/maftir.md)| Set to '1' if this verse is part of a maftir
+[parashahebr](docs/features/parashahebr.md)| The name of the parasha in Hebrew
+[parashanum](docs/features/parashanum.md)| The sequence number of the parasha
+[parashatrans](docs/features/parashatrans.md)| Transliteration of the Hebrew parasha name
+[parashaverse](docs/features/parashaverse.md)| The sequence number of the verse within the parasha
 
 
 # Adding the features

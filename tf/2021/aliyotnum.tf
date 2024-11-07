@@ -3,7 +3,7 @@
 @convertedBy=Tony Jurg
 @coreData=Biblia Hebraica Stuttgartensia (Amstelodamensis)
 @coreDataUrl=https://github.com/ETCBC/bhsa
-@description=Sequence number of the aliyot within the parasha
+@description=The sequence number of the aliyot within the parasha
 @license=Creative Commons Attribution-NonCommercial 4.0 International License
 @licenseUrl=http://creativecommons.org/licenses/by-nc/4.0/
 @provenance=jupyter Notebook (TBA)
@@ -11,7 +11,7 @@
 @version=0.1
 @website=https://github.com/tonyjurg/BHSaddons
 @writtenBy=Text-Fabric
-@dateWritten=2024-11-07T12:30:05Z
+@dateWritten=2024-11-07T14:06:43Z
 
 1414389	1
 1
