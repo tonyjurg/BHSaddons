@@ -1,4 +1,4 @@
-[![Project Status: Concept – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)  [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 # BHSaddons
 
@@ -16,7 +16,7 @@ feature | Description
 [parashaverse](docs/features/parashaverse.md)| The sequence number of the verse within the parasha
 
 
-# Adding the features
+## Adding the features
 
 By default, the additional features of the Nestle 1904 Text-Fabric dataset are not loaded. To include them, use the `mod` option during invocation, as shown below:
 
@@ -46,3 +46,19 @@ To resolve this issue, ensure that GitHub support is added to Text-Fabric by run
 Since GitHub implemented a API rate limit of 60 requests per hour, it is recommended to use a personal access token to increase this rate limit. Refer to the following resources for guidance:
 - [Jupyter Notebook: Increase GitHub API Rate Limit](https://nbviewer.org/github/CenterBLC/N1904/blob/main/docs/tutorial/Increase_GitHub_rate_limit.ipynb)
 - [Text-Fabric Documentation: Using GitHub Tokens](https://annotation.github.io/text-fabric/tf/advanced/repo.html#token-in-environment-variables)
+
+## Example use case
+
+The following python snippet allows for easy selection of all verse nodes of the first parasha, Bereshit.
+
+```python
+# find all word nodes for parasha Bereshit
+parashaQuery = '''
+verse parashatrans=Bereshit
+  word
+'''
+parashaResults = A.search(parashaQuery)
+for verse, node in parashaResults:
+    # do some interesting stuff ...
+```
+  
