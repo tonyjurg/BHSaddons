@@ -12,7 +12,7 @@ The name of the parasha in Hebrew.
 
 Frequencytable for this and related feature:
 
-| [parashanum](parashanum.md) | parashahebr     | [parashatrans](parashatrans.md)   | count |
+| [parashanum](parashanum.md) | parashahebr     | [parashatrans](parashatrans.md)   | Frequency |
 |------------|------------------|----------------|-------|
 | 1          | בְּרֵאשִׁית     | Bereshit       | 146   |
 | 2          | נֹחַ            | Noach          | 153   |
