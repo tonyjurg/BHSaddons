@@ -9,14 +9,15 @@ This repository contains a set of additional features developed for use with the
 
 The following features are provided:
 
-feature | Description
----|---
-[aliyotnum](docs/features/aliyotnum.md)|Sequence number of the aliyot within the parasha
-[maftir](docs/features/maftir.md)| Set to '1' if this verse is part of a maftir
-[parashahebr](docs/features/parashahebr.md)| The name of the parasha in Hebrew
-[parashanum](docs/features/parashanum.md)| The sequence number of the parasha
-[parashatrans](docs/features/parashatrans.md)| Transliteration of the Hebrew parasha name
-[parashaverse](docs/features/parashaverse.md)| The sequence number of the verse within the parasha
+feature |Nodetype| Description
+---|---|---
+[aliyotnum](docs/features/aliyotnum.md)| `verse` | Sequence number of the aliyot within the parasha
+[maftir](docs/features/maftir.md)| `verse` | Set to '1' if this verse is part of a maftir
+[parashahebr](docs/features/parashahebr.md)| `verse` | The name of the parasha in Hebrew
+[parashanum](docs/features/parashanum.md)| `verse` | The sequence number of the parasha
+[parashatrans](docs/features/parashatrans.md)| `verse` | Transliteration of the Hebrew parasha name
+[parashaverse](docs/features/parashaverse.md)| `verse` | The sequence number of the verse within the parasha
+[wordboundary](docs/features/wordboundary.md)| `word` | This feature indicates wordboudaries (spaces OR maqaf)
 
 
 ## Adding the features
