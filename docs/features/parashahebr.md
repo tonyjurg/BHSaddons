@@ -10,7 +10,7 @@ The name of the parasha in Hebrew.
 
 ## Feature values
 
-Frequencytable for this and related feature:
+Frequencytable for this and related features:
 
 | [parashanum](parashanum.md) | parashahebr     | [parashatrans](parashatrans.md)   | Frequency |
 |------------|------------------|----------------|-------|
