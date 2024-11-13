@@ -12,7 +12,7 @@ The sequence number of the parasha.
 
 Frequencytable for this and related feature:
 
-| parashanum | parashahebr     | parashatrans   | count |
+| parashanum | [parashahebr](parashahebr.md)    | [parashatrans](parashatrans.md)   | count |
 |------------|------------------|----------------|-------|
 | 1          | בְּרֵאשִׁית     | Bereshit       | 146   |
 | 2          | נֹחַ            | Noach          | 153   |
