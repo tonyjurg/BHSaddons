@@ -2,11 +2,11 @@
 
 Feature type | Data type | Available for node types
 ---  | --- | --- 
-`Node`|`String`|`verse`
+`Node`|`String`|`word`
 
 ## Feature description
 
-indicates wordboudaries (spaces OR maqaf).
+indicates wordboudaries (spaces OR maqaf). The maqaf (מַקָּף‎) functions in Hebrew to connect two words.
 
 ## Feature values
 
