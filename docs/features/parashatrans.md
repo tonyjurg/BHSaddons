@@ -12,7 +12,7 @@ Transliteration of the Hebrew parasha name.
 
 Frequencytable for this and related feature:
 
-| parashanum | parashahebr     | parashatrans   | count |
+| (parashanum)[parashanum.md] | [parashahebr](parashahebr.md)     | parashatrans   | count |
 |------------|------------------|----------------|-------|
 | 1          | בְּרֵאשִׁית     | Bereshit       | 146   |
 | 2          | נֹחַ            | Noach          | 153   |
