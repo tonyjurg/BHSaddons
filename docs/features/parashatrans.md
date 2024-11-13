@@ -10,9 +10,9 @@ Transliteration of the Hebrew parasha name.
 
 ## Feature values
 
-Frequencytable for this and related feature:
+Frequencytable for this and related features:
 
-| [parashanum](parashanum.md) | [parashahebr](parashahebr.md)     | parashatrans   | count |
+| [parashanum](parashanum.md) | [parashahebr](parashahebr.md)     | parashatrans   | Frequency |
 |------------|------------------|----------------|-------|
 | 1          | בְּרֵאשִׁית     | Bereshit       | 146   |
 | 2          | נֹחַ            | Noach          | 153   |
