@@ -10,4 +10,4 @@ The sequence number of the aliya within the parasha.
 
 ## Feature values
 
-Either a number (string) or empty when not part of a parasha.
+A number (string) between '1' and '7' when part of a parash. The feature value is empty when verse is not part of a parasha.
