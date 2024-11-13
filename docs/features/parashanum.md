@@ -10,7 +10,7 @@ The sequence number of the parasha.
 
 ## Feature values
 
-Frequencytable for this and related feature:
+Frequencytable for this and related features:
 
 | parashanum | [parashahebr](parashahebr.md)    | [parashatrans](parashatrans.md)   | Frequency |
 |------------|------------------|----------------|-------|
