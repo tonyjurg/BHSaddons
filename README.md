@@ -9,15 +9,15 @@ This repository contains a set of additional features developed for use with the
 
 The following features are provided:
 
-feature |Nodetype| Description
----|---|---
-[aliyotnum](docs/features/aliyotnum.md)| `verse` | Sequence number of the aliyot within the parasha
-[maftir](docs/features/maftir.md)| `verse` | Set to '1' if this verse is part of a maftir
-[parashahebr](docs/features/parashahebr.md)| `verse` | The name of the parasha in Hebrew
-[parashanum](docs/features/parashanum.md)| `verse` | The sequence number of the parasha
-[parashatrans](docs/features/parashatrans.md)| `verse` | Transliteration of the Hebrew parasha name
-[parashaverse](docs/features/parashaverse.md)| `verse` | The sequence number of the verse within the parasha
-[wordboundary](docs/features/wordboundary.md)| `word` | This feature indicates wordboudaries (spaces OR maqaf)
+Feature name | Data type | Available on node | Description | Examples
+---|---|---|---|---
+[aliyotnum](docs/features/aliyotnum.md)| `String`| `verse` | Sequence number of the aliyot within the parasha | `1` ... `7` <span>` `</span>
+[maftir](docs/features/maftir.md)|`String`| `verse` | Set to '1' if this verse is part of a maftir | <span>` `</span> `1`
+[parashahebr](docs/features/parashahebr.md)|`String`| `verse` | The name of the parasha in Hebrew | `בְּרֵאשִׁית` `נֹחַ`
+[parashanum](docs/features/parashanum.md)|`String`| `verse` | The sequence number of the parasha | `1` ... `54` <span>` `</span>
+[parashatrans](docs/features/parashatrans.md)|`String`| `verse` | Transliteration of the Hebrew parasha name | `Bereshit` `Noach`
+[parashaverse](docs/features/parashaverse.md)|`String`| `verse` | The sequence number of the verse within the parasha | `1` `2` ...
+[wordboundary](docs/features/wordboundary.md)|`String`| `word` | This feature indicates wordboudaries (spaces OR maqaf)|  `1` <span>` `</span>
 
 
 ## Adding the features
