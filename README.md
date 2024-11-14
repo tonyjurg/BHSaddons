@@ -14,7 +14,7 @@ Feature name | Data type | Available on node | Description | Examples
 [aliyotnum](docs/features/aliyotnum.md)| `String`| `verse` | Sequence number of the aliyot within the parasha | `1` ... `7` <span>` `</span>
 [maftir](docs/features/maftir.md)|`String`| `verse` | Set to '1' if this verse is part of a maftir | <span>` `</span> `1`
 [parashahebr](docs/features/parashahebr.md)|`String`| `verse` | The name of the parasha in Hebrew | `בְּרֵאשִׁית` `נֹחַ`
-[parashanum](docs/features/parashanum.md)|`String`| `verse` | The sequence number of the parasha | `1` ... `54` <span>` `</span>
+[parashanum](docs/features/parashanum.md)|`String`| `integer` | The sequence number of the parasha | `1` ... `54` &lt;empty&gt;
 [parashatrans](docs/features/parashatrans.md)|`String`| `verse` | Transliteration of the Hebrew parasha name | `Bereshit` `Noach`
 [parashaverse](docs/features/parashaverse.md)|`String`| `verse` | The sequence number of the verse within the parasha | `1` `2` ...
 [wordboundary](docs/features/wordboundary.md)|`String`| `word` | This feature indicates wordboudaries (spaces OR maqaf)|  `1` <span>` `</span>
