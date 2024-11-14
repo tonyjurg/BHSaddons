@@ -68,3 +68,14 @@ Frequencytable for this and related features:
 | 52         | וַיֵּלֶךְ     | Vayeilech      | 30    |
 | 53         | הַאֲזִינוּ    | Ha’azinu       | 52    |
 | 54         | וְזֹאת הַבְּרָכָה | Vezot Haberakhah | 41    |
+
+## Notes
+
+Since this is an integer feature which only contains a value when the verse is part of any parasha, you can use this feature to conveniently select all verses in the Torah:
+```python
+torahVersesQuery = '''
+verse parashanum
+   ...
+'''
+torahVersesResult = BHSA.search(torahVersesQuery)
+```
