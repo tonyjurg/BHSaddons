@@ -2,7 +2,7 @@
 
 Feature type | Data type | Available for node types
 ---  | --- | --- 
-`Node`|`String`|`verse`
+`Node`|`Integer`|`verse`
 
 ## Feature description
 
