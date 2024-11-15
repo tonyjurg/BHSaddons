@@ -5,18 +5,18 @@
 
 # BHSaddons
 
-This repository contains a set of additional features developed for use with the [BHSA Text-Fabric dataset](https://github.com/ETCBC/bhsa).
+This repository offers a set of features built specifically for use with the [BHSA Text-Fabric dataset](https://github.com/ETCBC/bhsa). Text-Fabric is a powerful platform for analyzing biblical texts with linguistic and structural detail. To complement this, our this feature set focus on the parashot, the weekly portions into which the Torah is divided. A parasha is a designated section of the Torah, read during weekly synagogue services. Together, the 54 parashot divide the entire five books of the Torah, forming a yearly cycle of reading that is central to Jewish liturgy and tradition.
 
 The following features are provided:
 
 Feature name | Data type | Available on node | Description | Examples
 ---|---|---|---|---
-[aliyotnum](docs/features/aliyotnum.md)| `String`| `verse` | Sequence number of the aliyot within the parasha | `1` ... `7` <span>` `</span>
+[aliyotnum](docs/features/aliyotnum.md)| `Integer`| `verse` | Sequence number of the aliyot within the parasha | `1` ... `7` <span>` `</span>
 [maftir](docs/features/maftir.md)|`String`| `verse` | Set to '1' if this verse is part of a maftir | <span>` `</span> `1`
 [parashahebr](docs/features/parashahebr.md)|`String`| `verse` | The name of the parasha in Hebrew | `בְּרֵאשִׁית` `נֹחַ`
 [parashanum](docs/features/parashanum.md)|`Integer`| `verse` | The sequence number of the parasha | `1` ... `54` &lt;empty&gt;
 [parashatrans](docs/features/parashatrans.md)|`String`| `verse` | Transliteration of the Hebrew parasha name | `Bereshit` `Noach`
-[parashaverse](docs/features/parashaverse.md)|`String`| `verse` | The sequence number of the verse within the parasha | `1` `2` ...
+[parashaverse](docs/features/parashaverse.md)|`Integer`| `verse` | The sequence number of the verse within the parasha | `1` `2` ...
 [wordboundary](docs/features/wordboundary.md)|`String`| `word` | This feature indicates wordboudaries (spaces OR maqaf)|  `1` <span>` `</span>
 
 
