@@ -7,7 +7,7 @@
 @license=Creative Commons Attribution-NonCommercial 4.0 International License
 @licenseUrl=http://creativecommons.org/licenses/by-nc/4.0/
 @provenance=jupyter Notebook (TBA)
-@valueType=str
+@valueType=int
 @version=0.1
 @website=https://github.com/tonyjurg/BHSaddons
 @writtenBy=Text-Fabric
