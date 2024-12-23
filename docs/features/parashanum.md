@@ -22,7 +22,7 @@ Frequencytable for this and related features:
 | 6          | תּוֹלְדוֹת     | Toldot         | 106   |
 | 7          | וַיֵּצֵא        | Vayetzei       | 148   |
 | 8          | וַיִּשְׁלַח    | Vayishlach     | 153   |
-| 9          | וַיֵּשֶׁב      | Vayehev        | 112   |
+| 9          | וַיֵּשֶׁב      | Vayeshev        | 112   |
 | 10         | מִקֵּץ        | Miketz         | 146   |
 | 11         | וַיִּגַּשׁ     | Vayigash       | 106   |
 | 12         | וַיְחִי       | Vayechi        | 85    |

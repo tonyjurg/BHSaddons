@@ -6,12 +6,12 @@
 @description=indicates wordboudaries (spaces OR maqaf)
 @license=Creative Commons Attribution-NonCommercial 4.0 International License
 @licenseUrl=http://creativecommons.org/licenses/by-nc/4.0/
-@provenance=jupyter Notebook (TBA)
+@provenance=Jupyter Notebook (TBA)
 @valueType=str
 @version=0.1
 @website=https://github.com/tonyjurg/BHSaddons
 @writtenBy=Text-Fabric
-@dateWritten=2024-11-12T15:04:35Z
+@dateWritten=2024-12-23T15:22:30Z
 
 
 1

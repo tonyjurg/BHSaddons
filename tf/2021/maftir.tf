@@ -6,12 +6,12 @@
 @description=Set to 1 if this verse is part of a maftir
 @license=Creative Commons Attribution-NonCommercial 4.0 International License
 @licenseUrl=http://creativecommons.org/licenses/by-nc/4.0/
-@provenance=jupyter Notebook (TBA)
-@valueType=int
+@provenance=Jupyter Notebook (TBA)
+@valueType=str
 @version=0.1
 @website=https://github.com/tonyjurg/BHSaddons
 @writtenBy=Text-Fabric
-@dateWritten=2024-11-07T14:06:43Z
+@dateWritten=2024-12-23T15:22:22Z
 
 1414389	
 

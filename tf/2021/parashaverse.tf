@@ -6,12 +6,12 @@
 @description=The sequence number of the verse within the parasha
 @license=Creative Commons Attribution-NonCommercial 4.0 International License
 @licenseUrl=http://creativecommons.org/licenses/by-nc/4.0/
-@provenance=jupyter Notebook (TBA)
+@provenance=Jupyter Notebook (TBA)
 @valueType=int
 @version=0.1
 @website=https://github.com/tonyjurg/BHSaddons
 @writtenBy=Text-Fabric
-@dateWritten=2024-11-07T14:06:43Z
+@dateWritten=2024-12-23T15:22:22Z
 
 1414389	1
 2
