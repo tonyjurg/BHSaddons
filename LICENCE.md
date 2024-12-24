@@ -12,7 +12,7 @@ This is a human-readable summary of (and not a substitute for) the [license](htt
  
 ### You should not:
 
-  * use this for commercial purposes
+  * Use this for commercial purposes
 
 The licensor cannot revoke these freedoms as long as you follow the license terms.
 
