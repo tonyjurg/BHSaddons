@@ -1,4 +1,4 @@
-# [BHSaddons](https://github.com/tonyjurg/BHSaddons) feature: aliyotnum
+#  BHSaddons feature: aliyotnum
 
 Feature type | Data type | Available for node types
 ---  | --- | --- 
