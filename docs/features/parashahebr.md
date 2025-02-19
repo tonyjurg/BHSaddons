@@ -1,4 +1,4 @@
-# [BHSaddons](https://github.com/tonyjurg/BHSaddons) feature: parashahebr
+# BHSaddons feature: parashahebr
 
 Feature type | Data type | Available for node types
 ---  | --- | --- 
