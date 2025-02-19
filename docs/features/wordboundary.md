@@ -1,4 +1,4 @@
-# [BHSaddons](https://github.com/tonyjurg/BHSaddons) feature: wordboundary
+# BHSaddons feature: wordboundary
 
 Feature type | Data type | Available for node types
 ---  | --- | --- 
