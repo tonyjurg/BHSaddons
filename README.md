@@ -1,8 +1,5 @@
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14051603.svg)](https://doi.org/10.5281/zenodo.14051603) [![SWH](https://archive.softwareheritage.org/badge/origin/https://doi.org/10.5281/zenodo.14051603)](https://archive.softwareheritage.org/browse/origin/https://doi.org/10.5281/zenodo.14051603) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_NC-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-
-
-
 # BHSaddons
 
 This repository offers a set of features built specifically for use with the [BHSA Text-Fabric dataset](https://etcbc.github.io/bhsa/). Text-Fabric is a powerful platform for analyzing biblical texts with linguistic and structural detail. To complement this, our this feature set focus on the parashot, the weekly portions into which the Torah is divided. A parasha is a designated section of the Torah, read during weekly synagogue services. Together, the 54 parashot divide the entire five books of the Torah, forming a yearly cycle of reading that is central to Jewish liturgy and tradition.
@@ -65,4 +62,17 @@ parashaResults = A.search(parashaQuery)
 for verse, node in parashaResults:
     # do some interesting stuff ...
 ```
-  
+
+## BibTeX
+
+```
+@software{Jurg_BHSaddons_-_Additional_2024,
+author = {Jurg, Tony},
+doi = {10.5281/zenodo.14051604},
+month = nov,
+title = {{BHSaddons - Additional features for BHSA Text Fabric dataset}},
+url = {https://github.com/tonyjurg/BHSaddons},
+version = {0.1},
+year = {2024}
+}
+```
