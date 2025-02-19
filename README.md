@@ -5,7 +5,7 @@
 
 # BHSaddons
 
-This repository offers a set of features built specifically for use with the [BHSA Text-Fabric dataset](https://github.com/ETCBC/bhsa). Text-Fabric is a powerful platform for analyzing biblical texts with linguistic and structural detail. To complement this, our this feature set focus on the parashot, the weekly portions into which the Torah is divided. A parasha is a designated section of the Torah, read during weekly synagogue services. Together, the 54 parashot divide the entire five books of the Torah, forming a yearly cycle of reading that is central to Jewish liturgy and tradition.
+This repository offers a set of features built specifically for use with the [BHSA Text-Fabric dataset](https://etcbc.github.io/bhsa/). Text-Fabric is a powerful platform for analyzing biblical texts with linguistic and structural detail. To complement this, our this feature set focus on the parashot, the weekly portions into which the Torah is divided. A parasha is a designated section of the Torah, read during weekly synagogue services. Together, the 54 parashot divide the entire five books of the Torah, forming a yearly cycle of reading that is central to Jewish liturgy and tradition.
 
 The following features are provided:
 
