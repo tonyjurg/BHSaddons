@@ -1,0 +1,115 @@
+{
+  "repo_notes": [
+    {
+      "content": ""
+    }
+  ],
+  "pages": [
+    {
+      "title": "BHSaddons Overview",
+      "purpose": "High-level introduction to BHSaddons: what it is, what problem it solves, how it fits into the BHSA/Text-Fabric ecosystem, and how to navigate the wiki for deeper details.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "purpose": "Step-by-step guide for installing Text-Fabric with GitHub support, loading BHSaddons as a module via the `mod` parameter, handling GitHub API rate limits, and running the first query. Covers the `use()` call pattern and common setup errors.",
+      "parent": "BHSaddons Overview",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "License and Citation",
+      "purpose": "Details the dual-license model: CC BY 4.0 for BHSaddons itself and CC BY-NC 4.0 for the underlying BHSA base data. Explains attribution requirements, the Zenodo DOI, and the CITATION.cff format for academic citation.",
+      "parent": "BHSaddons Overview",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Feature Reference",
+      "purpose": "Overview of all seven features provided by BHSaddons, their node types, data types, and the liturgical/structural concepts they encode. Links to child pages for per-feature detail.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Parasha Features (parashanum, parashahebr, parashatrans)",
+      "purpose": "Detailed documentation of the three inter-related parasha identification features: the integer sequence number (`parashanum` 1–54), the Hebrew name with full vocalization (`parashahebr`), and the Latin-script transliteration (`parashatrans`). Covers the full 54-parasha mapping table, frequency distribution of verses per parasha, and how to use these features together in TF search queries.",
+      "parent": "Feature Reference",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Aliyot and Maftir Features (aliyotnum, parashaverse, maftir)",
+      "purpose": "Detailed documentation of the three intra-parasha subdivision features: `aliyotnum` (which of the 7 aliyot a verse belongs to), `parashaverse` (the verse's sequential position within its parasha), and `maftir` (binary flag for the concluding maftir section). Includes frequency tables, null/empty-value semantics for non-Torah verses, and example queries.",
+      "parent": "Feature Reference",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Word Boundary Feature (wordboundary)",
+      "purpose": "Detailed documentation of the `wordboundary` feature, which operates at the `word` node level (unlike all other features which target `verse` nodes). Explains the BHSA morphemic decomposition model, how the trailing-edge '1' indicator marks the end of a surface-level typographic word, the role of the maqaf, and the Genesis 1:1 worked example.",
+      "parent": "Feature Reference",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Data Files and Internal Format",
+      "purpose": "Overview of the Text-Fabric `.tf` file format used to store all features, the `tf/2021/` directory layout, and how the data pipeline was constructed. Links to child pages covering the TF format specifics and the data provenance/conversion process.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Text-Fabric Feature File Format",
+      "purpose": "Explains the `.tf` file structure: the metadata header fields (`@node`, `@valueType`, `@description`, `@coreData`, `@writtenBy`, etc.), the compact sequential node-value encoding, how implicit node-index incrementing works, and how boundary transitions (e.g., parasha resets) are encoded. Covers all seven `.tf` files in `tf/2021/`.",
+      "parent": "Data Files and Internal Format",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Data Provenance and Conversion Pipeline",
+      "purpose": "Documents the origin of the liturgical data (hebcal), the ETCBC/BHSA 2021 node alignment, the Jupyter Notebook-based conversion process authored by Tony Jurg, and the relationship between the BHSaddons version (0.1) and the BHSA dataset version (2021). Covers how node IDs (starting at 1414389) map to Torah verses.",
+      "parent": "Data Files and Internal Format",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Glossary",
+      "purpose": "Definitions of all domain-specific terms, abbreviations, and codebase concepts that an onboarding engineer or biblical-text researcher would need to understand when working with BHSaddons. Each entry includes code/file pointers.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    }
+  ]
+}
