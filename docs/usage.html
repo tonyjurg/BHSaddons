@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Using BHSaddons | BHSaddons</title>
+<meta name="description" content="Additional parasha, aliya and word boundary features for the BHSA Text-Fabric dataset.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/style.css"></head>
+<body><a class="skip" href="#content">Skip to content</a><div class="wrapper">
+<header><h1><a href="index.html">BHSaddons</a></h1>
+<div class="project-mark"><img src="assets/logo.svg" width="250" height="163" alt="BHSaddons — additional features layered on the BHSA dataset"></div>
+<p class="tagline">Additional features for the BHSA Text-Fabric dataset.</p>
+<nav aria-label="Project navigation"><a href="index.html">BHSaddons</a><a href="about.html">About BHSaddons</a><a href="usage.html" aria-current="page">Using BHSaddons</a><a href="features.html">Feature documentation</a><a href="legal.html">Legal</a><a href="https://github.com/tonyjurg/BHSaddons">GitHub repository</a><a href="https://doi.org/10.5281/zenodo.14051603">Zenodo archive</a></nav></header>
+<main id="content"><h1>Using BHSaddons</h1>
+<h2>Adding the features</h2>
+<pre><code>from tf.app import use
+
+A = use(&quot;etcbc/BHSA&quot;, version=&quot;2021&quot;,
+        mod=&quot;tonyjurg/BHSaddons/tf/&quot;, hoist=globals())</code></pre>
+<p>To use this functionality, the Text-Fabric package must support downloading files from GitHub. If it was installed without GitHub functionality, you might encounter errors like the following when trying to load the additional features:</p>
+<pre><code>The requested data is not available offline
+	~/text-fabric-data/github/tonyjurg/BHSaddons/tf/2021 not found
+Backend provider github not supported.
+Cannot reach online data on github
+Try installing text-fabric one of the following:
+pip install text-fabric[github]
+pip install text-fabric[all]</code></pre>
+<p>To resolve this issue, ensure that GitHub support is added to Text-Fabric by running:</p>
+<pre><code>!pip install text-fabric[github]</code></pre>
+<p>Since GitHub implemented a API rate limit of 60 requests per hour, it is recommended to use a personal access token to increase this rate limit. Refer to the following resources for guidance:</p>
+<ul><li><a href="https://nbviewer.org/github/CenterBLC/N1904/blob/main/docs/tutorial/Increase_GitHub_rate_limit.ipynb">Jupyter Notebook: Increase GitHub API Rate Limit</a></li><li><a href="https://annotation.github.io/text-fabric/tf/advanced/repo.html#token-in-environment-variables">Text-Fabric Documentation: Using GitHub Tokens</a></li></ul>
+<h2>Example use case</h2>
+<p>The following python snippet allows for easy selection of all verse nodes of the first parasha, Bereshit.</p>
+<pre><code># find all word nodes for parasha Bereshit
+parashaQuery = &#x27;&#x27;&#x27;
+verse parashatrans=Bereshit
+  word
+&#x27;&#x27;&#x27;
+parashaResults = A.search(parashaQuery)
+for verse, node in parashaResults:
+    # do some interesting stuff ...</code></pre></main>
+<footer><p><a class="project-credit" href="https://www.tj-engineering.nl"><img src="assets/tje-black.png" width="40" height="40" alt="TJ Engineering"><span>a TJ Engineering project</span></a></p><p><small>Hosted on GitHub Pages<br>Layout inspired by <a href="https://tonyjurg.github.io/Doc4TF/">Doc4TF</a> and the <a href="https://github.com/orderedlist/minimal">Minimal theme</a>.</small></p></footer>
+</div></body></html>

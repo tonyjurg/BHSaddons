@@ -7,7 +7,7 @@ from html.parser import HTMLParser
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "site"
+OUT = ROOT / "docs"
 
 
 def inline(text):
@@ -108,7 +108,7 @@ def build():
     shutil.copy(ROOT / 'website/logo.svg', OUT / 'assets/logo.svg')
     shutil.copy(ROOT / 'website/tje-black.png', OUT / 'assets/tje-black.png')
     shutil.copytree(ROOT / 'images', OUT / 'images', dirs_exist_ok=True)
-    shutil.copytree(ROOT / 'docs/features/images', OUT / 'features/images', dirs_exist_ok=True)
+    (OUT / 'features').mkdir(exist_ok=True)
     readme = (ROOT / 'README.md').read_text(encoding='utf-8')
     overview = readme.split('# BHSaddons\n', 1)[1].split('## Adding the features')[0]
     overview = overview.replace('docs/features/', 'features/').replace('.md)', '.html)')
@@ -129,6 +129,7 @@ def build():
         value_type = 'Integer' if '@valueType=int' in (ROOT / f'tf/2021/{path.stem}.tf').read_text(encoding='utf-8') else 'String'
         text = re.sub(r'`Node`\|`(?:String|Integer)`', f'`Node`|`{value_type}`', text)
         content = '<p class="breadcrumb"><a href="../features.html">Features</a> / ' + path.stem + '</p>' + markdown(text)
+        content += f'<p><a href="{path.name}">View the source documentation (Markdown)</a></p>'
         (OUT / f'features/{path.stem}.html').write_text(page(path.stem, content, 1, 'features'), encoding='utf-8')
     (OUT / '.nojekyll').touch()
     validate_links()
@@ -156,4 +157,3 @@ def validate_links():
 
 if __name__ == '__main__':
     build()
-
