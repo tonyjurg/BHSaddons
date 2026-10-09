@@ -103,10 +103,6 @@ def page(title, content, depth=0, active=''):
 def build():
     OUT.mkdir(exist_ok=True)
     (OUT / 'assets').mkdir(exist_ok=True)
-    shutil.copy(ROOT / 'website/style.css', OUT / 'assets/style.css')
-    shutil.copy(ROOT / 'website/favicon.svg', OUT / 'assets/favicon.svg')
-    shutil.copy(ROOT / 'website/logo.svg', OUT / 'assets/logo.svg')
-    shutil.copy(ROOT / 'website/tje-black.png', OUT / 'assets/tje-black.png')
     shutil.copytree(ROOT / 'images', OUT / 'images', dirs_exist_ok=True)
     (OUT / 'features').mkdir(exist_ok=True)
     readme = (ROOT / 'README.md').read_text(encoding='utf-8')
