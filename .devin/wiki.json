@@ -1,7 +1,7 @@
 {
   "repo_notes": [
     {
-      "content": ""
+      "content": "BHS refers to the codex, BHSA to the Text-Fabric dataset, and BHSaddons to the additional features supplied by this repository for BHSA version 2021. Ground all claims in repository files. Distinguish stored metadata from independently verified facts; flag conflicting documentation rather than silently resolving it. Do not invent a conversion pipeline or notebook that is not present."
     }
   ],
   "pages": [
@@ -10,7 +10,7 @@
       "purpose": "High-level introduction to BHSaddons: what it is, what problem it solves, how it fits into the BHSA/Text-Fabric ecosystem, and how to navigate the wiki for deeper details.",
       "page_notes": [
         {
-          "content": ""
+          "content": "Sources: README.md, tf/2021/*.tf, docs/index.html. Explain the BHS/BHSA/BHSaddons naming distinction and the seven additional features."
         }
       ]
     },
@@ -20,17 +20,17 @@
       "parent": "BHSaddons Overview",
       "page_notes": [
         {
-          "content": ""
+          "content": "Sources: README.md and docs/usage.html. Include from tf.app import use, version=\"2021\", and mod=\"tonyjurg/BHSaddons/tf/\". Separate notebook shell commands from Python code."
         }
       ]
     },
     {
       "title": "License and Citation",
-      "purpose": "Details the dual-license model: CC BY 4.0 for BHSaddons itself and CC BY-NC 4.0 for the underlying BHSA base data. Explains attribution requirements, the Zenodo DOI, and the CITATION.cff format for academic citation.",
+      "purpose": "Documents licence declarations and citation: the CC BY 4.0 declaration in LICENCE.md, the CC BY-NC 4.0 declarations in feature headers and for the BHSA base data, and the unresolved discrepancy. Explains attribution and CITATION.cff, using citation DOI 10.5281/zenodo.14051604.",
       "parent": "BHSaddons Overview",
       "page_notes": [
         {
-          "content": ""
+          "content": "Sources: LICENCE.md, CITATION.cff, README.md, and @license/@licenseUrl in tf/2021/*.tf. LICENCE.md declares CC BY 4.0 and identifies the BHSA base data as CC BY-NC 4.0; the feature headers themselves declare CC BY-NC 4.0. Explicitly flag this discrepancy without selecting a controlling licence. Use citation DOI 10.5281/zenodo.14051604 from CITATION.cff; the README badge links to 10.5281/zenodo.14051603. Do not assume their relationship without verification."
         }
       ]
     },
@@ -39,27 +39,27 @@
       "purpose": "Overview of all seven features provided by BHSaddons, their node types, data types, and the liturgical/structural concepts they encode. Links to child pages for per-feature detail.",
       "page_notes": [
         {
-          "content": ""
+          "content": "Sources: README.md, docs/features/*.md, and tf/2021/*.tf. Use @valueType for stored feature types and flag disagreements with Markdown. Six features target verse nodes; wordboundary targets word nodes."
         }
       ]
     },
     {
       "title": "Parasha Features (parashanum, parashahebr, parashatrans)",
-      "purpose": "Detailed documentation of the three inter-related parasha identification features: the integer sequence number (`parashanum` 1–54), the Hebrew name with full vocalization (`parashahebr`), and the Latin-script transliteration (`parashatrans`). Covers the full 54-parasha mapping table, frequency distribution of verses per parasha, and how to use these features together in TF search queries.",
+      "purpose": "Detailed documentation of the three inter-related parasha identification features: the integer sequence number (`parashanum` 1–54), the Hebrew name as stored in the feature (`parashahebr`), and the Latin-script transliteration (`parashatrans`). Covers the full 54-parasha mapping table, frequency distribution of verses per parasha, and how to use these features together in TF search queries.",
       "parent": "Feature Reference",
       "page_notes": [
         {
-          "content": ""
+          "content": "Sources: docs/features/parashanum.md, docs/features/parashahebr.md, docs/features/parashatrans.md, and their matching tf/2021/*.tf files. Reproduce Hebrew names as stored; do not claim complete vocalization. Attribute frequency tables to the documentation unless recomputed."
         }
       ]
     },
     {
       "title": "Aliyot and Maftir Features (aliyotnum, parashaverse, maftir)",
-      "purpose": "Detailed documentation of the three intra-parasha subdivision features: `aliyotnum` (which of the 7 aliyot a verse belongs to), `parashaverse` (the verse's sequential position within its parasha), and `maftir` (binary flag for the concluding maftir section). Includes frequency tables, null/empty-value semantics for non-Torah verses, and example queries.",
+      "purpose": "Documents the intra-parasha features: aliyotnum (integer aliya number, 1–7), parashaverse (integer verse position within a parasha), and maftir (string 1 or empty for maftir membership). Covers documented frequency tables, missing-value semantics, example queries, and disagreements between Markdown descriptions and .tf type metadata.",
       "parent": "Feature Reference",
       "page_notes": [
         {
-          "content": ""
+          "content": "Sources: docs/features/aliyotnum.md, docs/features/parashaverse.md, docs/features/maftir.md, and matching tf/2021/*.tf files. aliyotnum and parashaverse have @valueType=int although their Markdown describes strings. maftir has @valueType=str and uses string 1 or an absent value; do not describe it as a stored Boolean or integer. Preserve each feature's distinct missing-value semantics."
         }
       ]
     },
@@ -69,16 +69,16 @@
       "parent": "Feature Reference",
       "page_notes": [
         {
-          "content": ""
+          "content": "Sources: docs/features/wordboundary.md, docs/features/images/wordboundary.png, and tf/2021/wordboundary.tf. Use the Genesis 1:1 example to explain surface word boundaries versus BHSA word nodes and describe maqaf handling according to the source."
         }
       ]
     },
     {
       "title": "Data Files and Internal Format",
-      "purpose": "Overview of the Text-Fabric `.tf` file format used to store all features, the `tf/2021/` directory layout, and how the data pipeline was constructed. Links to child pages covering the TF format specifics and the data provenance/conversion process.",
+      "purpose": "Overview of the Text-Fabric .tf files, the tf/2021/ directory layout, and available metadata. Links to child pages on file format, recorded provenance, and versioning. Identifies the absence of a conversion pipeline implementation.",
       "page_notes": [
         {
-          "content": ""
+          "content": "Sources: tf/2021/*.tf and README.md. Explain available files and metadata; no conversion notebook or pipeline implementation is included in this repository."
         }
       ]
     },
@@ -88,17 +88,27 @@
       "parent": "Data Files and Internal Format",
       "page_notes": [
         {
-          "content": ""
+          "content": "Sources: all seven tf/2021/*.tf files, especially metadata and initial data rows. Distinguish explicit node indices, implicit increments, stored values, and missing values. Do not infer text references from numeric node IDs alone."
         }
       ]
     },
     {
-      "title": "Data Provenance and Conversion Pipeline",
-      "purpose": "Documents the origin of the liturgical data (hebcal), the ETCBC/BHSA 2021 node alignment, the Jupyter Notebook-based conversion process authored by Tony Jurg, and the relationship between the BHSaddons version (0.1) and the BHSA dataset version (2021). Covers how node IDs (starting at 1414389) map to Torah verses.",
+      "title": "Data Provenance and Versioning",
+      "purpose": "Documents recorded provenance metadata and the distinction between BHSaddons version 0.1 and BHSA dataset version 2021. Explains the Jupyter Notebook (TBA) provenance placeholder and the absence of the conversion notebook. Distinguishes observed node indices from text references that require verification against BHSA.",
       "parent": "Data Files and Internal Format",
       "page_notes": [
         {
-          "content": ""
+          "content": "Sources: @author, @convertedBy, @coreData, @coreDataUrl, @provenance, @version, and @dateWritten in tf/2021/*.tf; README.md and CITATION.cff. The headers record Public Domain, hebcal and Tony Jurg, and @provenance=Jupyter Notebook (TBA). No conversion notebook is included. Node 1414389 is visible as a starting index in verse feature data, but confirming its text reference requires the matching BHSA dataset."
+        }
+      ]
+    },
+    {
+      "title": "Documentation Website",
+      "purpose": "Explains the documentation site under docs/, its feature Markdown sources and generated HTML, local assets, and the dependency-free Python build script. Covers rebuilding, local preview, and GitHub Pages publication from main /docs.",
+      "parent": "BHSaddons Overview",
+      "page_notes": [
+        {
+          "content": "Sources: scripts/build_site.py, docs/index.html, docs/features.html, docs/features/*.md, docs/features/*.html, and docs/assets/. Run python scripts/build_site.py to rebuild, then python -m http.server 8767 --bind 127.0.0.1 --directory docs to preview. Commit rebuilt HTML with source changes. Pages uses Deploy from a branch, main, /docs. Feature pages link to the original Markdown sources. Assets now live in docs/assets/; website/ was removed. Do not imply that the old GitHub Actions workflow is still active."
         }
       ]
     },
@@ -107,7 +117,7 @@
       "purpose": "Definitions of all domain-specific terms, abbreviations, and codebase concepts that an onboarding engineer or biblical-text researcher would need to understand when working with BHSaddons. Each entry includes code/file pointers.",
       "page_notes": [
         {
-          "content": ""
+          "content": "Sources: README.md, docs/features/*.md, tf/2021/*.tf, and scripts/build_site.py. Include BHS, BHSA, BHSaddons, Text-Fabric, parasha, aliya/aliyot, maftir, maqaf, node, feature, and dataset versus addon version; attach relevant file pointers."
         }
       ]
     }
